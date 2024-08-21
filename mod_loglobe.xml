@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="module" client="site" method="upgrade" >
+	<name>Loglobe</name>
+	<author>KWProductions121 Co.</author>
+	<creationDate>2024-July</creationDate>
+	<copyright>Copyright (C) 2016 - 2024</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>webarchitect@kwprodtuctions121.ir</authorEmail>
+	<authorUrl>http://www.extensions.kwproductions121.ir</authorUrl>
+	<version>1.0.0</version>
+	<description>
+	<![CDATA[A rotating globe with images of your choice!<br />
+	<a href="https://www.kwproductions121.ir"><img src="/modules/mod_loglobe/logokw-productions.gif" /></a>
+	]]>
+	</description>
+	<namespace path="src">Joomla\Module\Loglobe</namespace>
+	
+<languages folder="language">
+<language tag="en-GB">en-GB/en-GB.mod_loglobe.ini</language>
+<language tag="en-GB">en-GB/en-GB.mod_loglobe.sys.ini</language>
+</languages>
+
+<updateservers>
+		<server type="collection" name="mod_loglobe"><![CDATA[https://www.extensions.kwproductions121.ir/myextensions.xml]]></server>
+</updateservers>
+
+	
+	<files>
+		<folder module="mod_loglobe">services</folder>
+		<folder>src</folder>
+		<folder>tmpl</folder>
+		<file>logokw-productions.gif</file>
+	</files>
+	
+	
+	<config>
+		<fields name="params">
+			<fieldset name="Globe">
+			     	<field
+					name="imagefolder"
+					type="text"
+					label="Image Folder Name"
+					required="true"
+				/>
+			
+			   	<field
+					name="spherewidth"
+					type="number"
+					label="Image Width"
+					default="250"
+					filter="integer"
+					required="true"
+
+				/>
+					<field
+					name="sphereheight"
+					type="number"
+					label="Image Height"
+					default="250"
+					filter="integer"
+					required="true"
+				/>
+					<field
+					name="perspective"
+					type="number"
+					label="Perspective"
+					default="500"
+					filter="integer"
+					required="true"
+
+				/>
+					<field
+					name="perspectivechange"
+					type="number"
+					label="Perspective Change"
+					default="288"
+					filter="integer"
+					required="true"
+
+				/>
+					
+					<field
+					name="transitiontype"
+					type="text"
+					label="Transition Type"
+					default="ease-in-out"
+					required="true"
+
+				/>
+				
+					<field
+					name="rotationtime"
+					type="int"
+					label="Rotation Time"
+					default="40"
+					filter="integer"
+					required="true"
+
+				/>
+				
+					<field
+					name="bordercolor"
+					type="color"
+					label="Border Color"
+					default="#ffffff"
+					required="true"
+					/>
+					
+						<field
+					name="bordersize"
+					type="int"
+					label="Border Size"
+					default="5"
+					required="true"
+					/>
+					
+					
+					<field
+					name="buttonbkcol"
+					type="color"
+					label="Label Back-Color"
+					default="#ffffff"
+					required="true"
+					/>
+					
+					
+						
+					<field
+					name="buttontxtcol"
+					type="color"
+					label="Label Text Color"
+					default="#000000"
+					required="true"
+					/>
+					
+					
+				
+			</fieldset>
+		</fields>
+	</config>
+</extension>
