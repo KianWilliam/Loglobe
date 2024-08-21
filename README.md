@@ -1,5 +1,5 @@
 # Loglobe
-A Joomla 5 3d image carrier with capacity to show up with  1 to 8 images
+A Joomla 5.x , 4.x 3d image carrier with capacity to show up with  1 to 8 images
 Create a folder in media and fill it up with images of any size and extension 
 Control the appearance from backsite of module
 More than 8 images won't be shown in the gallery to save symmetrism, performance and layout
